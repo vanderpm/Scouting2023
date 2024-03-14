@@ -23,53 +23,126 @@
 
 
                 <TextView
-                    android:id="@+id/endGameHabitatLevelText"
+                    android:id="@+id/endGameRobotSpeedText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/top_of_screen_margin"
                     android:layout_marginBottom="@dimen/textview_spacer"
-                    android:text="@string/endGameHabitatLevelHeading"
+                    android:text="@string/endGameRobotSpeedHeading"
                     android:textSize="@dimen/label_text_size"/>
 
                 <RadioGroup
-                    android:id="@+id/endGameHabitatLevelRadioQuestion"
+                    android:id="@+id/endGameRobotSpeedRadioQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/question_height"
                     android:orientation="horizontal">
 
 
                     <RadioButton
-                        android:id="@+id/habOneEndGame_Radiobtn"
+                        android:id="@+id/slowRobotEndGame_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/habOneEndGame"
+                        android:text="@string/slowRobotSpeedEndGame"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/habTwoEndGame_Radiobtn"
+                        android:id="@+id/mediumRobotSpeedEndGame_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/habTwoEndGame"
+                        android:text="@string/mediumRobotSpeedEndGame"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/habThreeEndGame_Radiobtn"
+                        android:id="@+id/fastRobotSpeedEndGame_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/habThreeEndGame"
+                        android:text="@string/fastRobotSpeedEndGame"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/habNoneEndGame_Radiobtn"
+                        android:id="@+id/deadRobotSpeedEndGame_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/habNoneEndGame"
+                        android:text="@string/deadRobotSpeedEndGame"
                         style="@style/scoutingRadioButtonTheme" />
                 </RadioGroup>
+                <TextView
+                    android:id="@+id/endGameRobotPlacementText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_of_screen_margin"
+                    android:layout_marginBottom="@dimen/textview_spacer"
+                    android:text="@string/endGameRobotPlacementHeading"
+                    android:textSize="@dimen/label_text_size"/>
+                <RadioGroup
+                    android:id="@+id/endGameRobotPlacementRadioQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/question_height"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/parkedRobotEndGame_Radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/parkedRobotEndGame"
+                        style="@style/scoutingRadioButtonTheme" />
+
+                    <RadioButton
+                        android:id="@+id/AttemptedOnStageEndGame_Radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/attemptedOnstageEndGame"
+                        style="@style/scoutingRadioButtonTheme" />
+
+                    <RadioButton
+                        android:id="@+id/successOnstageEndGame_Radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/successOnstageEndGame"
+                        style="@style/scoutingRadioButtonTheme" />
+
+                    <RadioButton
+                        android:id="@+id/harmonizedEndGame_Radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/harmonizedEndGame"
+                        style="@style/scoutingRadioButtonTheme" />
+                    <RadioButton
+                        android:id="@+id/noEndGame_Radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/noEndGame"
+                        style="@style/scoutingRadioButtonTheme" />
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/endGameSpotlight_chkbx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/question_height"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_marginBottom="@dimen/textview_spacer"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/endGameSpotlight_chkbxText"
+                    style="@style/scoutingRadioButtonTheme" />
+                <CheckBox
+                    android:id="@+id/endGameCoopertitionBonus_chkbx"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/question_height"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_marginBottom="@dimen/textview_spacer"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/endGameCooperationBonus_chkbxText"
+                    style="@style/scoutingRadioButtonTheme" />
 
                 <CheckBox
                     android:id="@+id/endGameDefenseAllMatch_chkbx"
@@ -131,6 +204,14 @@
                     android:layout_gravity="center_horizontal"
                     android:text="@string/endGameFoulsChkbxText"
                     style="@style/scoutingRadioButtonTheme" />
+
+                <EditText
+                    android:id="@+id/matchComments_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:hint="@string/matchComments"
+                    android:inputType="text"/>
 
             </LinearLayout>
 

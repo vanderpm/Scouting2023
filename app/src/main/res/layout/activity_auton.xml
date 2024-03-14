@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -21,99 +22,140 @@
                 android:orientation="vertical"
                 android:gravity="center_horizontal">
 
-                <TextView
-                    android:id="@+id/pickupLocationText"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/matchNumberEditText"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/top_of_screen_margin"
-                    android:layout_marginBottom="@dimen/textview_spacer"
-                    android:text="@string/pickupLocation"
-                    android:textSize="@dimen/label_text_size" />
+                    android:hint="@string/matchNumberHeading"
+                    android:inputType="number"
+                    android:maxLength="3"/>
 
+                <EditText
+                    android:id="@+id/teamNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:hint="@string/teamNumberHeading"
+                    android:inputType="number"
+                    android:maxLength="5"/>
+
+                <TextView
+                    android:id="@+id/autonStartingPositionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startingPositionHeading"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_marginBottom="@dimen/textview_spacer"
+                    android:textSize="@dimen/label_text_size"/>
 
                 <RadioGroup
-                    android:id="@+id/pickupLocationRadioQuestion"
+                    android:id="@+id/autonStartingPositionRadioQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/question_height"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/sourcePickupLocation_Radiobtn"
+                        android:id="@+id/leftStartPositionAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/sourcePickupLocation"
+                        android:text="@string/leftStartPositionAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/floorPickupLocation_Radiobtn"
+                        android:id="@+id/middleStartPostionAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/floorPickupLocation"
+                        android:text="@string/middleStartPositionAuton"
+                        style="@style/scoutingRadioButtonTheme" />
+                    <RadioButton
+                        android:id="@+id/rightStartPostionAuton_Radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/rightStartPositionAuton"
+                        style="@style/scoutingRadioButtonTheme" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/sandstormStartingGamePieceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/autonStartingGamePiece"
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_marginBottom="@dimen/textview_spacer"
+                    android:textSize="@dimen/label_text_size"/>
+
+                <RadioGroup
+                    android:id="@+id/autonStartingGamePieceRadioQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/question_height"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/autonStartingGamePiece_Radiobtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/autonStartingGamePiece"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/startedWithItem_Radiobtn"
+                        android:id="@+id/autonNotStartingGamePiece_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/startedWithItem"
+                        android:text="@string/autonNotStartingGamePiece"
                         style="@style/scoutingRadioButtonTheme" />
+
+
                 </RadioGroup>
 
 
                 <TextView
-                    android:id="@+id/itemPlacedText"
+                    android:id="@+id/autonItemPlacedText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/autonItemPlacedHeading"
                     android:layout_marginTop="@dimen/top_margin"
                     android:layout_marginBottom="@dimen/textview_spacer"
-                    android:text="@string/itemPlacedLocationText"
-                    android:textSize="@dimen/label_text_size" />
-
+                    android:textSize="@dimen/label_text_size"/>
 
                 <RadioGroup
-                    android:id="@+id/itemPlacedRadioQuestion"
+                    android:id="@+id/autonItemPlacedRadioQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/question_height"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/speakerItemPlaced_Radiobtn"
+                        android:id="@+id/autonSpeakerItemPlaced_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/speakerItemPlaced"
+                        android:text="@string/autonSpeakerItemPlaced"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/amplifiedSpeakerItemPlaced_Radiobtn"
+                        android:id="@+id/autonAmpItemPlaced_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/amplifiedSpeakerItemPlaced"
+                        android:text="@string/autonAmpItemPlaced"
                         style="@style/scoutingRadioButtonTheme" />
 
-
                     <RadioButton
-                        android:id="@+id/ampItemPlaced_Radiobtn"
+                        android:id="@+id/autonFloorItemPlaced_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/ampItemPlaced"
+                        android:text="@string/autonFloorItemPlaced"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/floorItemPlaced_Radiobtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/floorItemPlaced"
-                        style="@style/scoutingRadioButtonTheme" />
-
-                    <RadioButton
-                        android:id="@+id/nothingPlacedItemPlaced_Radiobtn"
+                        android:id="@+id/autonNothingPlacedItemPlaced_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -121,41 +163,35 @@
                         style="@style/scoutingRadioButtonTheme" />
                 </RadioGroup>
 
-
                 <CheckBox
-                    android:id="@+id/defense_chkbx"
+                    android:id="@+id/autonBaseline_chkbx"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/question_height"
-                    android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/top_margin"
                     android:layout_marginBottom="@dimen/textview_spacer"
-                    android:text="@string/defenseChkbxText"
-                    style="@style/scoutingRadioButtonTheme" />
-
-                <CheckBox
-                    android:id="@+id/allDefense_chkbx"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/question_height"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/textview_spacer"
-                    android:text="@string/allDefenseChkbxText"
+                    android:text="@string/autonBaseline_chkbxText"
                     style="@style/scoutingRadioButtonTheme" />
 
+
+                <EditText
+                    android:id="@+id/autonNoteEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/top_of_screen_margin"
+                    android:hint="@string/autonNoteHeading"
+                    android:inputType="number"
+                    android:maxLength="2"/>
             </LinearLayout>
 
         </ScrollView>
 
         <Button
-            android:id="@+id/save_btn"
+            android:id="@+id/next_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="goToNextCycle"
-            android:text="@string/nextCycleButton" />
+            android:onClick="goToCycle"
+            android:text="@string/goToCycleButton" />
     </LinearLayout>
+
 </FrameLayout>
-
-
-
-
-
-

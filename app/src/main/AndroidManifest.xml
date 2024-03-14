@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.frc107.scouting2019">
+    package="com.frc107.scouting2024">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,7 +19,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.DuckActivity"></activity>
-        <activity android:name=".view.MainActivity">
+        <activity android:name=".view.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,12 +28,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.ScouterInitialsActivity" />
-        <activity android:name=".view.SandstormActivity" />
+        <activity android:name=".view.AutonActivity" />
         <activity android:name=".view.CycleActivity" />
         <activity android:name=".view.PitActivity" />
         <activity android:name=".view.EndGameActivity" />
         <activity android:name=".view.AdminActivity" />
-        <activity android:name=".analysis.team.TeamAnalysisActivity" />
+        <activity android:name="com.frc107.scouting2024.analysis.team.TeamAnalysisActivity" />
         <activity android:name=".analysis.attribute.AttributeAnalysisActivity" />
 
         <provider

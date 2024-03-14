@@ -31,139 +31,139 @@
                     android:maxLength="5"/>
 
                 <TextView
-                    android:id="@+id/pitSandstormOperationText"
+                    android:id="@+id/pitAutonOperationText"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:layout_marginTop="@dimen/top_margin"
                     android:layout_marginBottom="@dimen/textview_spacer"
-                    android:text="@string/pitSandstormOperation"
+                    android:text="@string/pitAutonOperation"
                     android:textSize="@dimen/label_text_size"/>
 
                 <RadioGroup
-                    android:id="@+id/sandstormOperationsRadioQuestion"
+                    android:id="@+id/autonOperationsRadioQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/question_height"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/visionSystemSandstorm_Radiobtn"
+                        android:id="@+id/visionSystemAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/visionSystemSandstorm"
+                        android:text="@string/visionSystemAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/cameraDrivingSandstorm_Radiobtn"
+                        android:id="@+id/cameraDrivingAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/cameraDrivingSandstorm"
+                        android:text="@string/cameraDrivingAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/blindDrivingSandstorm_Radiobtn"
+                        android:id="@+id/blindDrivingAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/blindDrivingSandstorm"
+                        android:text="@string/blindDrivingAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/noDrivingSandstorm_Radiobtn"
+                        android:id="@+id/noDrivingAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/noDrivingSandstorm"
+                        android:text="@string/noDrivingAuton"
                         style="@style/scoutingRadioButtonTheme" />
                 </RadioGroup>
 
                 <TextView
-                    android:id="@+id/pitSandstormPreferenceText"
+                    android:id="@+id/pitAutonPreferenceText"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:layout_marginTop="@dimen/top_margin"
                     android:layout_marginBottom="@dimen/textview_spacer"
-                    android:text="@string/pitSandstormPreference"
+                    android:text="@string/pitAutonPreference"
                     android:textSize="@dimen/label_text_size"/>
 
                 <RadioGroup
-                    android:id="@+id/sandstormPreferenceRadioQuestion"
+                    android:id="@+id/AutonPreferenceRadioQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/question_height"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/rocketshipPreferenceSandstorm_Radiobtn"
+                        android:id="@+id/rocketshipPreferenceAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/rocketshipPreferenceSandstorm"
+                        android:text="@string/rocketshipPreferenceAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/cargoshipPreferenceSandstorm_Radiobtn"
+                        android:id="@+id/cargoshipPreferenceAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/cargoshipPreferenceSandstorm"
+                        android:text="@string/cargoshipPreferenceAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/noPreferenceSandstorm_Radiobtn"
+                        android:id="@+id/noPreferenceAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/noPreferenceSandstorm"
+                        android:text="@string/noPreferenceAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                 </RadioGroup>
 
                 <TextView
-                    android:id="@+id/pitRocketLevelSandstormText"
+                    android:id="@+id/pitRocketLevelAutonText"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:layout_marginTop="@dimen/top_margin"
                     android:layout_marginBottom="@dimen/textview_spacer"
-                    android:text="@string/pitRocketLevelSandstorm"
+                    android:text="@string/pitRocketLevelAuton"
                     android:textSize="@dimen/label_text_size"/>
 
                 <RadioGroup
-                    android:id="@+id/highestRocketLevelSandstormRadioQuestion"
+                    android:id="@+id/highestRocketLevelAutonRadioQuestion"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/question_height"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/topRocketLevelSandstorm_Radiobtn"
+                        android:id="@+id/topRocketLevelAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/topRocketLevelSandstorm"
+                        android:text="@string/topRocketLevelAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/middleRocketLevelSandstorm_Radiobtn"
+                        android:id="@+id/middleRocketLevelAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/middleRocketLevelSandstorm"
+                        android:text="@string/middleRocketLevelAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/bottomRocketLevelSandstorm_Radiobtn"
+                        android:id="@+id/bottomRocketLevelAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/bottomRocketLevelSandstorm"
+                        android:text="@string/bottomRocketLevelAuton"
                         style="@style/scoutingRadioButtonTheme" />
 
                     <RadioButton
-                        android:id="@+id/noRocketLevelSandstorm_Radiobtn"
+                        android:id="@+id/noRocketLevelAuton_Radiobtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/noRocketLevelSandstorm"
+                        android:text="@string/noRocketLevelAuton"
                         style="@style/scoutingRadioButtonTheme" />
                 </RadioGroup>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Scouting 2019</string>
+    <string name="app_name">Scouting 2024</string>
 
     <string name="sendData">Send Data</string>
     <string name="submitInitials">Submit</string>
@@ -10,27 +10,26 @@
 
     <string name="mainAuthor">Developed by FRC Team 107</string>
 
-    <!--Sandstorm Strings-->
+    <!--Auton Strings-->
     <string name="teamNumberHeading">Team Number</string>
     <string name="matchNumberHeading">Match Number</string>
 
     <string name="startingPositionHeading">Starting Location</string>
-    <string name="habOneSandstorm">Hab One</string>
-    <string name="habTwoSandstorm">Hab Two</string>
+    <string name="leftStartPositionAuton">Left</string>
+    <string name="middleStartPositionAuton">Middle</string>
+    <string name="rightStartPositionAuton">Right</string>
 
-    <string name="sandstormStartingGamePiece">Starting Game Piece</string>
-    <string name="cargoSandstormStartingGamePiece">Cargo</string>
-    <string name="panelSandstormStartingGamePiece">Hatch Panel</string>
-    <string name="noSandstormStartingGamePiece">None</string>
+    <string name="autonStartingGamePiece">Start with Note</string>
+<!--    <string name="autonStartingGamePiece">Cargo</string>-->
+    <string name="autonNotStartingGamePiece">None</string>
+<!--    <string name="noautonStartingGamePiece">None</string>-->
 
-    <string name="sandstormItemPlacedHeading">Item Placed</string>
-    <string name="sandstormTopRocketItemPlaced">Top Rocket</string>
-    <string name="sandstormMiddleRocketItemPlaced">Middle Rocket</string>
-    <string name="sandstormBottomRocketItemPlaced">Bottom Rocket</string>
-    <string name="sandstormCargoshipItemPlaced">Cargo Ship</string>
-    <string name="sandstormFloorItemPlaced">Floor</string>
-    <string name="nothingPlacedItemPlaced">Not Placed</string>
-    <string name="sandstormBaseline_chkbxText">Crossed Baseline</string>
+    <string name="autonItemPlacedHeading">Item Placed</string>
+    <string name="autonSpeakerItemPlaced">Speaker</string>
+    <string name="autonAmpItemPlaced">Amp</string>
+    <string name="autonFloorItemPlaced">Floor</string>
+    <string name="autonNothingPlacedItemPlaced">Not Placed</string>
+    <string name="autonBaseline_chkbxText">Crossed Baseline</string>
 
 
     <string name="saveButton">Save</string>
@@ -46,19 +45,16 @@
 
     <!--Teleop Strings-->
     <string name="pickupLocation">Pickup Location</string>
-    <string name="portPickupLocation">Port</string>
+    <string name="sourcePickupLocation">Source</string>
     <string name="floorPickupLocation">Floor</string>
     <string name="startedWithItem">Started With Item</string>
 
-    <string name="itemPickedUpLocationText">Item Picked Up</string>
-    <string name="cargoPickedUp">Cargo</string>
-    <string name="hatchPickedUp">Hatch Panel</string>
+
 
     <string name="itemPlacedLocationText">Location Placed</string>
-    <string name="topRocketItemPlaced">Top Rocket</string>
-    <string name="middleRocketItemPlaced">Middle Rocket</string>
-    <string name="bottomRocketItemPlaced">Bottom Rocket</string>
-    <string name="cargoshipItemPlaced">Cargo Ship</string>
+    <string name="speakerItemPlaced">Speaker</string>
+    <string name="amplifiedSpeakerItemPlaced">Ampd Spkr</string>
+    <string name="ampItemPlaced">Amp</string>
     <string name="floorItemPlaced">Dropped</string>
 
     <string name="defenseChkbxText">Defense</string>
@@ -76,11 +72,20 @@
     <!--Teleop Error Strings-->
 
     <!--End Game Strings-->
-    <string name="endGameHabitatLevelHeading">Habitat Level</string>
-    <string name="habOneEndGame">Level One</string>
-    <string name="habTwoEndGame">Level Two</string>
-    <string name="habThreeEndGame">Level Three</string>
-    <string name="habNoneEndGame">No Level</string>
+    <string name="endGameRobotSpeedHeading">Robot Speed</string>
+    <string name="slowRobotSpeedEndGame">Slow</string>
+    <string name="mediumRobotSpeedEndGame">Medium</string>
+    <string name="fastRobotSpeedEndGame">Fast</string>
+    <string name="deadRobotSpeedEndGame">Died</string>
+    <string name="endGameRobotPlacementHeading">Robot Placement</string>
+    <string name="noEndGame">None</string>
+    <string name="harmonizedEndGame">Harmonized</string>
+    <string name="successOnstageEndGame">Onstage</string>
+    <string name="attemptedOnstageEndGame">Onstage Atempt</string>
+    <string name="parkedRobotEndGame">Parked</string>
+    <string name="endGameSpotlight_chkbxText">Spotlight</string>
+    <string name="endGameCooperationBonus_chkbxText">Cooperatition</string>
+
 
 
     <string name="endGameDefenseHeading">Defense</string>
@@ -99,23 +104,23 @@
     <!--Pit Scouting Strings-->
     <string name="pitTeamNumber">Team Number</string>
 
-    <string name="pitSandstormOperation">Sandstorm Operation</string>
-    <string name="visionSystemSandstorm">Vision</string>
-    <string name="cameraDrivingSandstorm">Camera</string>
-    <string name="blindDrivingSandstorm">Blind</string>
-    <string name="noDrivingSandstorm">None</string>
+    <string name="pitAutonOperation">Auton Operation</string>
+    <string name="visionSystemAuton">Vision</string>
+    <string name="cameraDrivingAuton">Camera</string>
+    <string name="blindDrivingAuton">Blind</string>
+    <string name="noDrivingAuton">None</string>
 
 
-    <string name="pitSandstormPreference">Sandstorm Preference</string>
-    <string name="cargoshipPreferenceSandstorm">Cargo Ship</string>
-    <string name="rocketshipPreferenceSandstorm">Rocketship</string>
-    <string name="noPreferenceSandstorm">None</string>
+    <string name="pitAutonPreference">Auton Preference</string>
+    <string name="cargoshipPreferenceAuton">Cargo Ship</string>
+    <string name="rocketshipPreferenceAuton">Rocketship</string>
+    <string name="noPreferenceAuton">None</string>
 
-    <string name="pitRocketLevelSandstorm">Rocket Level Sandstorm</string>
-    <string name="topRocketLevelSandstorm">Top Rocket</string>
-    <string name="middleRocketLevelSandstorm">Middle Rocket</string>
-    <string name="bottomRocketLevelSandstorm">Bottom Rocket</string>
-    <string name="noRocketLevelSandstorm">None</string>
+    <string name="pitRocketLevelAuton">Rocket Level Auton</string>
+    <string name="topRocketLevelAuton">Top Rocket</string>
+    <string name="middleRocketLevelAuton">Middle Rocket</string>
+    <string name="bottomRocketLevelAuton">Bottom Rocket</string>
+    <string name="noRocketLevelAuton">None</string>
 
     <string name="pitHabitatLevel">Habitat Level</string>
     <string name="topHabitatLevel">Top</string>
@@ -175,5 +180,8 @@
     <string name="downloadOPRs">Download OPRs</string>
     <string name="analysisOpr">OPR:</string>
     <string name="analysisDPR">DPR:</string>
+    <string name="matchComments">Comments</string>
+    <string name="autonNoteHeading">Auton Notes Scored</string>
+
 
 </resources>
